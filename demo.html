@@ -1,9 +1,38 @@
-<!DOCTYPE html>
-<html>
+<!--这是一段注释。-->
+<!DOCTYPE html> 
+<html lang="zh-CN"> <!--建议设置正确的lang属性，有助于提高页面可访问性-->
 <head>
-	<title></title>
+    <meta charset="utf-8"> 
+	<title>网页标题</title>
+	<link rel="stylesheet" type="text/css" href="theme.css" />
 </head>
 <body>
-
+	<div id="普通链接">
+    	<a href="http://myh4ck1ife.cn" hreflang="zh-CN media="screen and (width:500px)"  target="_blank" type="text/html">myh4ck1ife.cn</a>
+    </div>
+    <div id="download属性">
+    	<a href="1.png" download="smile">
+    	<img src="1.png" alt="smile">
+    	</a>
+    </div>
+    <div id="media测试">
+    	<a href="http://m.baidu.cn" media="handheld">移动版百度</a>
+    </div>
+    <div id="target_viewwindow">
+    	<h3>打开新窗口_view_windows</h3>
+		<ul>
+		  <li><a href="pref.html" target="view_window">Preface</a></li>
+		  <li><a href="chap1.html" target="view_window">Chapter 1</a></li>
+		  <li><a href="chap2.html" target="view_window">Chapter 2</a></li>
+		  <li><a href="chap3.html" target="view_window">Chapter 3</a></li>
+		</ul>
+    </div>
+    <div id="abbr简称/缩写">
+    	THE<abbr title="Make Life Get Better">MLGB</abbr> was found by lichen.
+    </div>
+    <frameset cols="200,*">
+  		<frame src="/example/html/toc.html">
+ 	 	<frame src="/example/html/pref.html" name="view_frame">
+	</frameset> 
 </body>
 </html>
