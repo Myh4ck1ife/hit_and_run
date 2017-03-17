@@ -5,12 +5,14 @@
     <meta charset="utf-8"> 
 	<title>网页标题</title>
 	<link rel="stylesheet" type="text/css" href="theme.css" />
+	<base href="#"> <!--知道咋回事行了-->
 </head>
 <body>
 	<div id="普通链接">
     	<a href="http://myh4ck1ife.cn" hreflang="zh-CN media="screen and (width:500px)"  target="_blank" type="text/html">myh4ck1ife.cn</a>
     </div>
     <div id="download属性">
+    	<p>单击图片下载</p>
     	<a href="1.png" download="smile">
     	<img src="1.png" alt="smile">
     	</a>
@@ -30,9 +32,206 @@
     <div id="abbr简称/缩写">
     	THE<abbr title="Make Life Get Better">MLGB</abbr> was found by lichen.
     </div>
-    <frameset cols="200,*">
+    <!--<frameset cols="200,*">
   		<frame src="/example/html/toc.html">
  	 	<frame src="/example/html/pref.html" name="view_frame">
-	</frameset> 
+	</frameset> -->
+	<div id="图片链接">
+		<p>单击图片跳转</p>
+		<a href="http://www.myh4ck1ife.cn">
+		<img src="1.png">
+		</a>
+	</div>
+	<div id="位置跳转">
+		<p>
+		<a href="#C6">查看 Chapter 6。</a>
+		</p>
+		<p>
+		<a href="#C8">查看 Chapter 8。</a>
+		</p>
+		<h2>Chapter 1</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 2</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>>Chapter 3</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 4</a></h2>
+		<p>This chapter explains ba bla bla</p>
+		<h2>Chapter 5</h2>
+		<p>This chapter explains ba bla bla</p>
+		<h2><a name="C6">Chapter 6</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 7</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2><a name="C8">Chapter 8</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 9</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 10</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 11</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 12</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 13</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 14</h2>
+		<p>This chapter explains ba bla bla</p>
+
+		<h2>Chapter 15</h2>
+		<p>This chapter explains ba bla bla</p>
+	</div>
+	<div id="复杂电子邮件">		
+		<p>
+		这是另一个 mailto 链接：
+		<a href="mailto:someone@microsoft.com?cc=someoneelse@microsoft.com&bcc=andsomeoneelse2@microsoft.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!">发送邮件！</a>
+		</p>
+		<p>
+		<b>注意：</b>应该使用 %20 来替换单词之间的空格，这样浏览器就可以正确地显示文本了。
+		</p>
+	</div>
+	<div id="acronym首字母缩写">
+		<acronym title="World Wide Web" onclick="alert('Hello,Gouzi!')">WWW</acronym> <!--如果你能看到这个，那我真的很爱你。-->
+	</div>
+	<div id="地址">
+		<address>
+			written by <a href="www.myh4ck1ife.cn">Gouzi</a>
+			China<br>
+			blalalalalal
+		</address>	
+	</div>
+	<div id="javaapplet">
+	<applet code="Bubbles.class" width="350" height="350">
+		Java applet that draws animated bubbles.
+	</applet>
+	</div>
+	<div id="area">
+		<img src="planets.jpg" border="0" usemap="#planetmap" alt="Planets" />
+		<map name="planetmap" id="planetmap">
+		  <area shape="circle" coords="180,139,14" href ="venus.html" alt="Venus" />
+		  <area shape="circle" coords="129,161,10" href ="mercur.html" alt="Mercury" />
+		  <area shape="rect" coords="0,0,110,260" href ="sun.html" alt="Sun" />
+		</map>
+	</div>
+	<div id="article">
+		<article>
+		  <h1>Internet Explorer 9</h1>
+		  <p>Windows Internet Explorer 9（简称 IE9）于 2011 年 3 月 14 日发布.....</p>
+		</article>
+	</div>
+	<div id="aside">
+		<p>Me and my family visited The Epcot center this summer.</p>
+			<aside>
+			<h4>Epcot Center</h4>
+			The Epcot Center is a theme park in Disney World, Florida.
+			</aside>
+	</div>
+	<div id="audio">
+		<audio src="horse.ogg" controls="controls" loop="loop">
+			您的浏览器不支持 audio 标签。
+		</audio>
+	</div>
+	<div id="粗体文本">
+		<b>这是粗体文本</b>
+	</div>
+	<div bidi隔离>
+		<ul>
+		<li>Username <bdi>Bill</bdi>:80 points</li>
+		<li>Username <bdi>Steve</bdi>: 78 points</li>
+		</ul>
+	</div>
+	<div id="bdo">
+		<p>
+		如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)；
+		</p>
+
+		<bdo dir="rtl">
+		Here is some Hebrew text
+		</bdo>
+	</div>
+	<div id="big">
+		<big>7<big>6<big>5<big>4<big>3<big>2<big>1</big></big></big></big></big></big></big>
+	</div>
+	<div id="块引用">
+		<blockquote cite="http://www.w3cschool.com">
+		<p>here is a long quotation here is a long quotation</p>
+		</blockquote>
+	</div>
+	<div id="button">
+	<button type="button" onclick="alert('i love u')">你能拿鼠标点到我么？</button> <!--刷完js把这个坑填上，可以对应onmousemove和onclick两个事件-->
+	</div>
+	<div id="canvas">
+		<canvas id="myCanvas" width="200" height="100"></canvas>
+		<!--规定id 宽度 高度-->
+		<!--本身canvas没有绘图能力的。所有的绘制工作必须在 JavaScript 内部完成
+		JavaScript 使用 id 来寻找 canvas 元素：
+		然后，创建 context 对象：getContext("2d") 对象是内建的 HTML5 对象，拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。
+		下面的两行代码绘制一个红色的矩形：
+		fillStyle 方法将其染成红色，fillRect 方法规定了形状、位置和尺寸。
+		-->
+		<script type="text/javascript">
+		var canvas=document.getElementById('myCanvas');
+		var ctx=canvas.getContext('2d');
+		ctx.fillStyle='#FF0000';
+		ctx.fillRect(0,0,80,100);
+		</script>
+	</div>
+	<div id="caption">
+		<table border="1">
+		  <caption>Monthly savings</caption>
+		  <tr>
+		    <th>Month</th>
+		    <th>Savings</th>
+		  </tr>
+		  <tr>
+		    <td>January</td>
+		    <td>$100</td>
+		  </tr>
+		</table>
+	</div>
+	<div id="居中引用">
+		<center>这里居中</center>
+		<cite>这里引用</cite>
+	</div>
+	<div id="这里是短语">
+		<em onmousemove="alert('em...i love u')">em</em><br><!--能发现这个真是欠你一顿饭-->
+		<strong>strong</strong><br>
+		<dfn>定义一个项目dfn</dfn><br>
+		<code>code</code><br>
+		<samp>定义样式文本samp</samp><br>
+		<kbd>定义键盘文本kbd</kbd><br>
+		<var>定义变量var</var><br>
+	</div>
+	<table width="100%" border="1"><!--疑问-->
+	  <col align="left" />
+	  <col align="right" />
+	  <col align="right" />
+	  <tr>
+	    <th>ISBN</th>
+	    <th>Title</th>
+	    <th>Price</th>
+	  </tr>
+	  <tr>
+	    <td>3476896</td>
+	    <td>My first HTML</td>
+	    <td>$53</td>
+	  </tr>
+	  <tr>
+	    <td>2489604</td>
+	    <td>My first CSS</td>
+	    <td>$47</td>
+	  </tr>
+	</table>
 </body>
 </html>
