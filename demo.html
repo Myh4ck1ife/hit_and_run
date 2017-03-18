@@ -1,5 +1,7 @@
 <!--这是一段注释。-->
 <!DOCTYPE html> 
+<!--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" 
+"http://www.w3.org/TR/html4/frameset.dtd">-->
 <html lang="zh-CN"> <!--建议设置正确的lang属性，有助于提高页面可访问性-->
 <head>
     <meta charset="utf-8"> 
@@ -213,25 +215,275 @@
 		<kbd>定义键盘文本kbd</kbd><br>
 		<var>定义变量var</var><br>
 	</div>
-	<table width="100%" border="1"><!--疑问-->
-	  <col align="left" />
-	  <col align="right" />
-	  <col align="right" />
-	  <tr>
-	    <th>ISBN</th>
-	    <th>Title</th>
-	    <th>Price</th>
-	  </tr>
-	  <tr>
-	    <td>3476896</td>
-	    <td>My first HTML</td>
-	    <td>$53</td>
-	  </tr>
-	  <tr>
-	    <td>2489604</td>
-	    <td>My first CSS</td>
-	    <td>$47</td>
-	  </tr>
-	</table>
+	<div id="col">
+			<table width="100%" border="1"><!--疑问-->
+			  <col align="left" />
+			  <col align="right" />
+			  <col align="right" />
+			  <tr>
+			    <th>ISBN</th>
+			    <th>Title</th>
+			    <th>Price</th>
+			  </tr>
+			  <tr>
+			    <td>3476896</td>
+			    <td>My first HTML</td>
+			    <td>$53</td>
+			  </tr>
+			  <tr>
+			    <td>2489604</td>
+			    <td>My first CSS</td>
+			    <td>$47</td>
+			  </tr>
+			</table>
+	</div>
+	<div id="datalist">
+		<input id="myCar" list="cars" />
+		<datalist id="cars">
+		  <option value="BMW">
+		  <option value="Ford">
+		  <option value="Volvo">
+		</datalist>	
+	</div>
+	<div id="dd">
+		<dl>
+		   <dt>计算机</dt>
+		   <dd>用来计算的仪器 ... ...</dd>
+		   <dt>显示器</dt>
+		   <dd>以视觉方式显示信息的装置 ... ...</dd>
+		</dl>
+	</div>
+	<div id="del">
+		a dozen is <del>20</del> 12 pieces
+	</div>
+	<div id="details">
+		<details>
+			<summary>Copyright 2011.</summary>
+			<p>All pages and graphics on this web site are the property of W3School.</p>
+		</details>
+	</div>
+	<div id="dialog">
+		<table border="1">
+			<tr>
+			<th>一月 <dialog open>这是打开的对话窗口</dialog></th>
+			<th>二月</th>
+			<th>三月</th>
+			</tr>
+			<tr>
+			<td>31</td>
+			<td>28</td>
+			<td>31</td>
+			</tr>
+		</table>	
+	</div>
+	<div id="dir">
+		<dir>
+		   <li>HTML</li>
+		   <li>XHTML</li>
+		   <li>CSS</li>
+		</dir>	
+	</div>
+	<div id="embed">
+		<embed src="http://www.w3school.com.cn//i/helloworld.swf"></embed>
+	</div>
+	<div id="fieldsed">
+		<form>
+		  <fieldset>
+		    <legend>health information</legend>
+		    height: <input type="text" />
+		    weight: <input type="text" />
+		  </fieldset>
+		</form>
+	</div>
+	<div id="figure">
+		<figure>
+		  <figcaption>傅家俊</figcaption>
+		  <img src="1.png" width="350" height="234" />
+		</figure>
+	</div>
+	<div id="figure">
+		<p>上海卢浦大桥是当今世界第一钢结构拱桥，是世界上跨度最大的拱形桥。它也是世界上首座完全采用焊接工艺连接的大型拱桥（除合拢接口采用栓接外），现场焊接焊缝总长度达4万多米，接近上海市内环高架路的总长度。卢浦大桥像澳大利亚悉尼的海湾大桥一样具有旅游观光的功能。</p>
+
+		<figure>
+		  <p>黄浦江上的的卢浦大桥</p>
+		  <p>拍摄者：W3School 项目组，拍摄时间：2010 年 10 月</p>
+		  <img src="1.png" width="350" height="234" />
+		</figure>
+	</div>
+	<div id="font">
+		<font size="3" color="red">This is some text!</font>
+		<font size="2" color="blue">This is some text!</font>
+		<font face="verdana" color="green">This is some text!</font>
+	</div>
+	<div id="foooter">
+		<footer>
+		  <p>Posted by: W3School</p>
+		  <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+		</footer>
+	</div>
+	<div id="form">
+		<form action="#" method="get">
+		  <p>First name: <input type="text" name="fname" /></p>
+		  <p>Last name: <input type="text" name="lname" /></p>
+		  <input type="submit" value="Submit" />
+		</form>
+	</div>
+	<div id="frame">
+		<iframe src="1.png"></iframe>
+		<p>一些老的浏览器不支持 iframe。</p>
+		<p>如果得不到支持，iframe 是不可见的。</p>
+	</div>
+	<div id="h">
+		<h1>这是标题 1</h1>
+		<h2>这是标题 2</h2>
+		<h3>这是标题 3</h3>
+		<h4>这是标题 4</h4>
+		<h5>这是标题 5</h5>
+		<h6>这是标题 6</h6>
+		<h1>This is header 1</h1>
+		<hr />
+		<p>This is some text</p>
+		<i>这是斜体</i>	
+	</div>
+	<div id="ins">
+		a dozen is <del>20</del> <ins>12</ins> pieces	
+	</div>
+	<div id="label">
+		<label for="male">Male</label>
+		<input type="radio" name="sex" id="male" />
+		<br />
+		<label for="female">Female</label>
+		<input type="radio" name="sex" id="female" />
+		</form>
+	</div>
+	<div id="mark">
+		<p>Do not forget to buy <mark>milk</mark> today.</p>
+	</div>
+	<div id="meter">
+		<meter value="3" min="0" max="10">十分之三</meter>
+		<meter value="0.6">60%</meter> 
+	</div>
+	<div id="nav">
+		<nav>
+		<a href="index.asp">Home</a>
+		<a href="html5_meter.asp">Previous</a>
+		<a href="html5_noscript.asp">Next</a>
+		</nav>
+	</div>
+	<div id="ol">
+		<ol>
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>	
+	</div>
+	<div id="optgroup">
+		<select>
+		  <optgroup label="Swedish Cars">
+		    <option value ="volvo">Volvo</option>
+		    <option value ="saab">Saab</option>
+		  </optgroup>
+
+		  <optgroup label="German Cars">
+		    <option value ="mercedes">Mercedes</option>
+		    <option value ="audi">Audi</option>
+		  </optgroup>
+		</select>
+		<select>
+		  <option value ="volvo">Volvo</option>
+		  <option value ="saab">Saab</option>
+		  <option value="opel">Opel</option>
+		  <option value="audi">Audi</option>
+		</select>
+	</div>
+	<div id="output">
+		<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+		   <input type="range" id="a" value="50">100
+		   +<input type="number" id="b" value="50">
+		   =<output name="x" for="a b"></output>
+		</form> 
+	</div>
+	<div id="progress">
+		<progress value="22" max="100"></progress>
+	</div>
+	<div id="q/rb">
+		<p>Here comes a short quotation: <q>This is a short quotation</q></p>
+		<p>请注意，浏览器在引用的周围插入了引号。</p>
+		<ruby>
+		漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>
+		</ruby>	
+		<ruby>
+		漢 <rt> ㄏㄢˋ </rt>
+		</ruby>
+		在 HTML 5 中，<s>仍然支持</s>已经不支持这个标签了。
+	</div>
+	<div id="script">
+		<script type="text/javascript">
+		document.write("Hello World!")
+		</script>
+	</div>
+	<div id="section">
+		<section>
+		  <h1>PRC</h1>
+		  <p>The People's Republic of China was born in 1949...</p>
+		</section>
+	</div>
+	<div id="small">
+		<small>7<small>6<small>5<small>4<small>3<small>2<small>1</small></small></small></small></small></small></small>
+	</div>
+	<div id="strike">
+		<p><span>some text.</span>some other text.</p>
+		<strike>sss</strike>
+		这段文本包含 <sub>下标</sub>
+		这段文本包含 <sup>上标</sup>
+		<tt>tt标签</tt>
+		<p>如果文本不是超链接，就不要<u>对其使用下划线</u>。</p>
+		<textarea rows="3" cols="20">
+		在w3school，你可以找到你所需要的所有的网站建设教程。
+		</textarea>
+	</div>
+	<div id="tbody">
+		<table border="1">
+		  <thead>
+		    <tr>
+		      <th>Month</th>
+		      <th>Savings</th>
+		    </tr>
+		  </thead>
+
+		  <tfoot>
+		    <tr>
+		      <td>Sum</td>
+		      <td>$180</td>
+		    </tr>
+		  </tfoot>
+
+		  <tbody>
+		    <tr>
+		      <td>January</td>
+		      <td>$100</td>
+		    </tr>
+		    <tr>
+		      <td>February</td>
+		      <td>$80</td>
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+	<div id="time">
+		<p>我们在每天早上 <time>9:00</time> 开始营业。</p>
+
+		<p>我在 <time datetime="2008-02-14">情人节</time> 有个约会。</p>
+	</div>
+	<div id="video">
+		<video src="horse.ogg" controls="controls">
+		您的浏览器不支持 video 标签。
+		</video>
+	</div>
+	<div id="wbr">
+		<p>
+		如果想学习 AJAX，那么您必须熟悉 XML<wbr>Http<wbr>Request 对象ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc。
+		</p>
+	</div>
 </body>
 </html>
