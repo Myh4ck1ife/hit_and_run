@@ -46,3 +46,32 @@ function showPic(whichPic){
 	//alert (description.firstChild.nodeValue);
 	description.firstChild.nodeValue = txt;
 }
+function prepareGallery(){
+	//if (!getElementsByTagName) return false;
+	//if (!getElementsById) return false;
+	//if (!document.getElementsByTagName || !document.getElementById) return false;
+	//if (!document.getElementById("imagegallery")) return false;
+	var gallery = document.getElementById("imagegallery");
+	var links = gallery.getElementsByTagName("a");
+	for (var i = 0; i < links.length; i++) {
+		links[i].onclick = function(){
+			showPic(this);
+			return false;
+		}
+
+	}
+}
+//window.onload = prepareGallery;
+function addLoadEvent(func){
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	}else{
+		window.onload = function(){
+			oldonload();
+			func();
+		}
+
+	}
+}
+addLoadEvent(prepareGallery);
