@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>js_demo页面</title>
+	<link rel="stylesheet" type="text/css" href="theme.css">
 </head>
 <body>
 <!--<p id="n" title="02">狗子</p>
@@ -10,20 +11,21 @@
 <h1>图片预览</h1>
 <ul>
 	<li>
-		<a href="1.jpg" onclick="showPic(this);return false;">1</a>
+		<a href="1.jpg" title="萌妹子" onclick="showPic(this);return false;">1</a>
 	</li>
 	<li>
-		<a href="2.jpg" onclick="showPic(this);return false;">2</a>
+		<a href="2.jpg" title="猴子" onclick="showPic(this);return false;">2</a>
 	</li>
 	<li>
-		<a href="3.jpg" onclick="showPic(this);return false;">3</a>
+		<a href="3.jpg" title="小哥哥" onclick="showPic(this);return false;">3</a>
 	</li>
 	<li>
-		<a href="4.jpg" onclick="showPic(this);return false;">4
+		<a href="4.jpg" title="小姐姐" onclick="showPic(this);return false;">4
 		</a>
 	</li>
 </ul>
 <img id="placeholder" src="1.png">
+<p id="description">Choose an image</p>
 <script type="text/javascript" src="demo.js"></script>
 </body>
 </html>
