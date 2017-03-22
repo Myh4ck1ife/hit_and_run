@@ -37,6 +37,7 @@ placeholder.setAttribute("src",source);
 }
 window.onload = countBodyChildren;
 */
+/*
 function showPic(whichPic){
 	var source = whichPic.getAttribute("href");
 	var placeholder = document.getElementById("placeholder");
@@ -74,4 +75,24 @@ function addLoadEvent(func){
 
 	}
 }
-addLoadEvent(prepareGallery);
+addLoadEvent(prepareGallery);*/
+//document.write("<p>这段是插入内容</p>")
+/*function insetParagraph(text){
+	var str = "<p>";
+	str += text;
+	str += "</p>";
+	document.write(str);
+}
+window.onload = insetParagraph("Hello，Gouzi!");*/
+/*window.onload = function(){
+	//var testdiv = document.getElementById("testdiv");
+	//alert(testdiv.innerHTML);
+	//testdiv.innerHTML = "<h1>这是一首简单的小情歌</h1>";
+	var para = document.createElement("p");
+	var info = "nodeName: ";
+	info+= para.nodeName;
+	info+= " nodeType: ";
+	info+= para.nodeType;
+	alert(info);
+}
+*/
