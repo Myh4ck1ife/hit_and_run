@@ -1,0 +1,87 @@
+li{
+	list-style-type:none;
+}
+.content{
+	background-color: #00C1DE;
+}
+h1{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.content-p{
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+}
+.card-item{
+	width: 300px;
+	border: 1px solid black;
+}
+body{
+	text-align: center;
+}
+button{
+	background-color: #FFFFFF;
+	border: 1px solid #00C1DE;
+	color: #00C1DE;
+}
+a{
+	text-decoration:none;
+	color: #00C1DE;
+}
+.content{
+	overflow:hidden
+}
+.content-first-list{
+	margin: 10px auto;
+}
+.main-info-p-first{
+	color: #A9C4DB;
+	font-size:11px;
+	margin: -5px auto;
+}
+.main-info-p-second{
+	color: #A9C4DB;
+	font-size:11px;
+	margin: 5px auto;
+}
+hr{
+	width: 240px;
+	color: #A9C4DB;
+	margin: 20px 0px 0px 25px;
+}
+.other-info-ul-li-first{
+	font-size: 13px;
+}
+.other-info-ul-li-second{
+	color: #A9C4DB;
+	font-size:11px;
+	margin: -5px auto;
+}
+.float{
+	float: left;
+	margin: auto 5px;
+}
+.content-first{
+	border-bottom: 1px solid black;
+	display: block;
+}
+.content-second{
+	height: 300px;
+	border-top: 1px solid black;
+	margin: 0px auto;
+	display: none;
+}
+.content.active{
+	background-color:#EBEBEC;
+}
+.content-first.active{
+	border-bottom: 1px solid black;
+	display: none;
+}
+.content-second.active{
+	height: 300px;
+	border-top: 1px solid black;
+	margin: 0px auto;
+	display: block;
+}
