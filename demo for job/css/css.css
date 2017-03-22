@@ -1,0 +1,81 @@
+.childBox{
+	float: left; /**并排显示**/
+	border: 1px solid black; /**加1px 实线 黑色边框**/
+	width: 300px;
+	height: 400px;
+}
+ul{
+	list-style-type:none;/**去小原点**/
+}
+#entireBox{
+	position:absolute;
+	left: 10%;
+	top:20%;                    /**放到大致屏幕中间**/
+}
+.topBox{
+	border-bottom:1px solid black; /**下边框**/
+	background-color: #EBEBEC;
+	overflow:hidden;
+}
+#boxLeft{
+	width: 320px;
+	height: 430px;
+	margin: -15px auto auto auto;
+}
+#topBoxLeft{
+	background-color: #42CCE0;
+	color: #FFFFFF;
+}
+h1,h2,h4{
+	text-align: center;
+}
+p.bottomBoxTopPt{
+	font-weight: bold;
+}
+p.bottomBoxTopPb{
+	color: #A9C4DB;
+	font-size: 12px;
+}
+.bottomBoxTop{
+	margin: auto auto auto 10px;
+}
+.bottomBoxTopa{
+	text-decoration:none;
+	color: #00C1DE;
+}
+button{
+	background-color: #FFFFFF;
+	border: 1px solid #00C1DE;
+	color: #00C1DE;
+}
+hr{
+	width: 280px;
+	color: #A9C4DB;
+	margin: 20px auto;
+}
+p.bottomBoxBottomBp1{
+	font-size: 13px;
+}
+.bottomBoxBottomB{
+	margin: auto auto auto 10px;
+}
+p.bottomBoxBottomBp2{
+	color: #A9C4DB;
+	font-size:11px;
+	margin: -5px auto;
+}
+.bottomBoxBottomBa{
+	text-decoration:none;
+	color: #00C1DE;
+	font-size: 11px;
+	margin: -5px auto;
+}
+.btmchild{
+	float: left; /**并排显示**/
+}
+.btmd{
+	margin: -12px auto;
+}
+.bottomBox.second{
+	display: none;
+}
