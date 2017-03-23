@@ -1,7 +1,7 @@
 function replaceClass(){
 	var insertClassfirst = document.getElementsByClassName('content');
 	for (var i = 0; i < insertClassfirst.length; i++) {
-	insertClassfirst[i].setAttribute("class","content active");
+		insertClassfirst[i].setAttribute("class","content active");
 	}
 	var insertClasssecond = document.getElementsByClassName('content-first');
 	for (var i = 0; i < insertClasssecond.length; i++) {
@@ -12,5 +12,8 @@ function replaceClass(){
 	insertClassthird[i].setAttribute("class","content-second active");
 	}
 }
+
+
+
 
 

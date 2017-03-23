@@ -62,6 +62,9 @@ hr{
 	float: left;
 	margin: auto 5px;
 }
+.card-item{
+	float: left;
+}
 .content-first{
 	border-bottom: 1px solid black;
 	display: block;
